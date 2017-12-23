@@ -1,0 +1,250 @@
+<!-- home-cc -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../docs/favicon.ico">
+    <title>艺术专栏</title>
+    <!-- core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- style for this -->
+    <link href="../dist/css/ColumnDetails.css" rel="stylesheet">
+    <!-- for debugging purpose.-->
+    <!-- [if lt IE 9]><script src="../docs/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../dist/js/jquery-2.2%20stable.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../docs/assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- nav-top -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <button id="showLeft" type="button" class="btn btn-default topleft">
+                  <span class="glyphicon glyphicon-menu-hamburger " aria-hidden="true"></span>
+                </button> -->
+                <a class="navbar-brand" href="#">YUNBO</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <div class="center-block">
+                    <ul class="nav navbar-nav" >
+                        <li><a href="#">艺术品</a></li>
+                        <li><a href="#">艺术故事</a></li>
+                        <li><a href="#">艺术专栏</a></li>
+                    </ul>
+              </div>
+              <form class="navbar-form navbar-right">
+                  <button type="submit" class="btn btn-default"><a data-toggle="modal" data-target="#login" href="">登录</a></button>
+                  <button type="submit" class="btn btn-default"><a data-toggle="modal" data-target="#register" href="">注册</a></button>
+              </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron"><!-- 修改过jumbotron的参数 -->
+            <img src="../img/User1.jpg" id="titlefirst">
+            <div style="float: left;margin-left: 10px;margin-top: -10px">
+                <p>User1</p>
+            </div>
+            <span class="glyphicon glyphicon-star-empty" aria-hidden="true" id="titlesecond" onclick="follow()"></span>
+            <span class="glyphicon glyphicon-heart-empty" aria-hidden="true" id="titleone" onclick="like()"></span>
+            <span class="glyphicon glyphicon-fullscreen" aria-hidden="true" id="titletwo" onclick="large()"></span>
+            <div class="jiathis_style" style="margin-left: 1%;float: left;margin-top: -3px">
+                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"></a>
+            </div>
+            <script type="text/javascript" >
+                var jiathis_config={
+                    siteNum:5,
+                    sm:"weixin,tsina,cqq,qzone,tieba",
+                    summary:"",
+                    boldNum:2,
+                    shortUrl:false,
+                    hideMore:true
+                }
+            </script>
+            <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+        </div>
+    </div> <!-- /container -->
+    <div class="well" style="width: 90%;margin-left: 5%">
+        <p style="font-size: 30px;font-family: 黑体">说法图</p>
+        <p style="font-size: 20px;font-family: 华文仿宋">北宋&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          彩塑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          山西&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          佛教（标签1）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          释迦牟尼（标签2）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          说法图（标签3）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </div>
+    <div id="text">
+        <p>释迦牟尼三十五岁成道，约当公元前528年，当年即赶往鹿野苑为憍陈如等五人说法，讲的是苦、空、无常的道理，后来又继续阐发四谛。</p>
+        <p>前527年，耶舍及其父亲归依佛，一出家，一在家；并调伏优楼频螺迦叶兄弟三人；然后前往王舍城，到频婆娑罗王住处，为国王说法，
+          使频婆娑罗王以及王舍城人民得到觉悟；王舍城长者迦兰奉献竹园作佛陀讲道的精舍，这是佛建立讲堂的开始。</p>
+        <p>前526年佛在象头山为龙王鬼神说法。</p>
+        <div style="text-align: center">
+            <img src="../img/Column1.jpg">
+        </div>
+        <p>前525年，舍利弗和目犍连前往竹园精舍求佛准许出家为比丘，这时归依佛的僧团已有一千二百五十大阿罗汉；
+          巨富摩诃迦叶在佛的说法及感召下，内心解悟，求佛出家，这是后来佛灭度后结集佛经的有力组织者，
+          因为有大威德智慧，所以叫做大迦叶；以上均在摩揭陀国境内。</p>
+        <p>前524年，到毗舍离国，因须提那子出家后，又还乡与原来的妻子过性生活，被僧团内的比丘们认为行为不检点干净，将他的过错禀告佛陀，
+          佛陀便召集僧众大会，对须提那子进行谴责，“你的所作所为有损比丘的威仪，不是洁净的行为，是不应当做的。”因此而制定淫戒。</p>
+        <p>前523年，舍卫国波斯匿王大臣须达即给孤独长者为佛陀买造祇园精舍，请佛前往舍卫国说法。祇园精舍共有一千二百间房，
+          安顿佛陀及僧团人员居住、讲法。这一年冬天，佛在罗阅城，因有僧众盗窃财物，受到当时国王及人民的诃责，因此佛为僧众制定盗戒。
+          佛在毗舍离城，因难提比丘被雇杀人，因此佛陀制定杀戒。当时印度许多国家灾荒，米价昂贵，和尚即比丘们很难乞讨到食物，
+          婆求河边有一些静坐的比丘，便相互散播谣言，妄称他们得到了至高无上的道理，使得在家的佛的信徒们将自己的口粮分一半给这些比丘，
+          后来信徒们到佛的住所一问，才知道他们是造的谣言，佛陀因此制定妄语戒。从此以后，凡是僧众犯了什么错误，就因事制定相应的戒律。
+          佛教的戒律中有重戒十条，轻戒四十八条，后来随时增订，逐渐发展到二百五十戒等。十条重戒是僧众们必须遵守的，根据《梵网经》的记载，
+          这十条重戒是：第一杀戒，第二盗戒，第三淫戒，第四妄语戒，第五酤酒戒，第六说四众过戒，第七自赞毁他戒，第八悭惜加毁戒，
+          第九嗔心不受悔戒，第十谤三宝戒。轻戒四十八条内容是：第一不敬师友戒，第二饮酒戒，第三食肉戒，第四食辛戒，第五不教悔罪戒，
+          第六不供给请法戒，第七懈怠不听法戒，第八背大向小戒，第九不看病戒，第十畜杀具戒，第十一国使戒，第十二贩卖戒，第十三谤毁戒，
+          第十四放火焚烧戒，第十五僻教戒，第十六为利倒说戒，第十七恃势乞求戒，第十八无解作师戒，第十九两舌戒，第二十不行放救戒，
+          第二十一嗔打报仇戒，第二十二骄慢不请法戒，第二十三骄慢僻说戒，第二十四不习学佛戒，第二十五不善知众戒，第二十六独受利养戒，
+          第二十七受别请戒，第二十八请僧戒，第二十九邪命自活戒，第三十不敬好时戒，第三十一不行救赎戒，第三十二损害众生戒，
+          第三十三邪业觉观戒，第三十四暂念小乘戒，第三十五不发愿戒，第三十六不发誓戒，第三十七冒难游行戒，第三十八乖尊卑次序戒，
+          第三十九不修福慧戒，第四十拣择授戒戒，第四十一为利作师戒，第四十二为恶人说戒戒，第四十三无惭受施戒，第四十四不供养经典戒，
+          第四十五不化众生戒，第四十六说法不如法戒，第四十七非法制限戒，第四十八破法戒。佛陀的精神是大戒必须遵守，但有时小小戒则可以舍弃，
+          这开了后来中国禅宗狂禅的大法门，所谓佛祖心头坐，酒肉穿肠过，便因此而找到了理论根据。</p>
+        <div style="text-align: center">
+            <img src="../img/Column2.jpg">
+        </div>
+        <p>这一年佛为僧众说《殃掘摩罗经》。</p>
+        <p>前522年，佛在拘耶尼国为婆陀和菩萨等八人说《般舟经》，阐释苦行的道理。这时，父王净饭王听说儿子得佛道已经六年了，
+          便派梵志优陀夷前往舍卫国迎接佛陀回故国。佛陀便带领着浩浩荡荡的僧众们回到了祖国迦毗罗卫。回国之后，
+          佛陀为父王及臣民说法，度了不少人出家。净饭王看到跟从佛陀的僧众们一个个瘦骨崚嶒，形貌萎陋，身体黑臭，
+          就像一只只黑老鸦停在紫金山上一般，显得极不相称，于是在本国豪族中挑选了五百名身强体健、相貌威武的年轻人命令他们随佛出家，
+          伺候左右。佛的堂兄弟提婆达多也想求佛出家，但遭到佛陀拒绝，提婆达多由此记恨在心，酿成后来犯下五逆大罪的过错，而堕入地狱。</p>
+        <p>前521年，阿难八岁剃发受戒。佛陀并嘱憍陈如等人为沙弥授戒。佛在柳山为纯真陀罗王弟说法。</p>
+        <p>前520年，佛派遣目犍连请净饭王及耶输陀罗允许儿子罗睺罗出家。起初遭到父王和妻子的反对，虽然后来勉强得到同意，
+          听从罗睺罗出家，但净饭王是为之十分痛惜的，他因此赶到佛的住处，对佛说：“你当初出家的时候，还有难陀在；现在难陀也已经出家了，
+          我最后的愿望都寄托在你这个儿子身上，你却硬要他出家，这样，就再也没有人来继承我的国家了，国计将因此而永远断绝。”
+          佛陀听了父王的话，也有些惨戚，但既已如此，只好设法开导安慰父王。佛因此召集僧众，建立制度：以后凡是要出家的，
+          如果他的父母不愿意不准许，就不许出家。</p>
+        <div style="text-align: center">
+            <img src="../img/Column3.jpg">
+        </div>
+        <p>佛到污秽的沼泽地带为陀掘摩说法。佛为僧众说《八关斋戒经》。</p>
+        <p>有十七群童子，大的有十七岁，小的才十二岁，他们也要求出家为比丘，但受不了大戒的约束，更加忍受不了一天才吃一顿饭的戒律，
+          每到半夜时就群起啼哭。佛陀听到了他们的哭声，得知原委，于是制定制度：年满二十才接受大戒的约束。</p>
+        <p>前519年，佛回到摩揭陀国，为弗迦沙王说法。楼至菩萨请求建立戒坛，为比丘受戒。佛命令在祇园精舍外院东南方建立戒坛，
+          戒坛从地而起，有三层，象征三空。帝释又加了一个覆釜（倒扣的锅形）用来覆盖舍利；大梵天王用无价的宝珠置于覆釜之上。
+          这样就有了五层，象征五分法身。</p>
+    </div>
+    <div id="flip">
+        <p style="font-size: 20px;font-family: 华文隶书;margin-top: 13px;float: left">评论</p>
+        <span class="glyphicon glyphicon-menu-down" aria-hidden="true" id="down"></span>
+    </div>
+    <div id="panel">
+        <div id="comment">
+            <dl id="list">
+                <dt class="dt1">1</dt>
+                <dt class="dt1">2</dt>
+                <dt class="dt1">3</dt>
+                <dt class="dt1">4</dt>
+                <dt class="dt1">5</dt>
+                <dt class="dt1">6</dt>
+                <dt class="dt1">1</dt>
+                <dt class="dt1">2</dt>
+                <dt class="dt1">3</dt>
+                <dt class="dt1">4</dt>
+                <dt class="dt1">5</dt>
+                <dt class="dt1">6</dt>
+                <dt class="dt1">1</dt>
+                <dt class="dt1">2</dt>
+                <dt class="dt1">3</dt>
+                <dt class="dt1">4</dt>
+                <dt class="dt1">5</dt>
+                <dt class="dt1">6</dt>
+                <dt class="dt1">1</dt>
+                <dt class="dt1">2</dt>
+                <dt class="dt1">3</dt>
+                <dt class="dt1">4</dt>
+                <dt class="dt1">5</dt>
+                <dt class="dt1">6</dt>
+            </dl>
+        </div>
+        <form action="ColumnDetails.html" method="post">
+            <div id="send">
+                <img src="../img/at.png" style="float: left;margin-left: 1%;margin-top: 12px;height: 20px;width: 20px;cursor: pointer" onclick="at()">
+                <input id="word">
+                <input style="margin-left: 3%;margin-top: 10px;cursor: pointer;float: left" value="发送" type="submit">
+                <span class="glyphicon glyphicon-share-alt" aria-hidden="true" style="margin-left: 3%;margin-top: 12px;cursor: pointer;font-size: 20px"></span>
+                <span class="glyphicon glyphicon-menu-up" aria-hidden="true" id="up"></span>
+            </div>
+        </form>
+    </div>
+</body>
+<script type="text/javascript">
+    function follow()
+    {
+        var x=document.getElementById("titlesecond");
+        if(x.getAttribute("class")=="glyphicon glyphicon-star-empty")
+        {
+            x.setAttribute("class","glyphicon glyphicon-star");
+        }
+        else {
+            x.setAttribute("class","glyphicon glyphicon-star-empty");
+        }
+    }
+    function like()
+    {
+        var x=document.getElementById("titleone");
+        if(x.getAttribute("class")=="glyphicon glyphicon-heart-empty")
+        {
+            x.setAttribute("class","glyphicon glyphicon-heart");
+        }
+        else {
+            x.setAttribute("class","glyphicon glyphicon-heart-empty");
+        }
+    }
+    function large()
+    {
+        window.location.href="WorkDetailsLarge.html"
+    }
+    function at()
+    {
+        document.getElementById("word").value="@";
+    }
+    $(document).ready(function()
+    {
+        $("#flip").click(function()
+        {
+            $("#panel").slideDown("slow");
+        });
+    });
+    $(document).ready(function()
+    {
+        $("#up").click(function()
+        {
+            $("#panel").slideUp("slow");
+        });
+    });
+    $(document).ready(function(){
+        $("#list dt:even").addClass("dt2");
+    });
+</script>
+</html>

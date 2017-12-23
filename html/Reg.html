@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>用户注册</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../dist/css/Reg.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../docs/assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        function display_differ()
+        {
+            var smrz=document.getElementById("check_smrz").checked;
+            if(smrz==true)
+            {
+                document.getElementById("name_label").style.visibility="visible";
+                document.getElementById("true_name").style.visibility="visible";
+                document.getElementById("star_1").style.visibility="visible";
+                document.getElementById("true_name").style.visibility="visible";
+                document.getElementById("type_label").style.visibility="visible";
+                document.getElementById("jumpMenu").style.visibility="visible";
+                document.getElementById("star_2").style.visibility="visible";
+                document.getElementById("true_name").style.visibility="visible";
+                document.getElementById("id_num").style.visibility="visible";
+                document.getElementById("id_key").style.visibility="visible";
+                document.getElementById("star_3").style.visibility="visible";
+            }
+            else
+            {
+                document.getElementById("name_label").style.visibility="hidden";
+                document.getElementById("true_name").style.visibility="hidden";
+                document.getElementById("star_1").style.visibility="hidden";
+                document.getElementById("type_label").style.visibility="hidden";
+                document.getElementById("jumpMenu").style.visibility="hidden";
+                document.getElementById("star_2").style.visibility="hidden";
+                document.getElementById("id_num").style.visibility="hidden";
+                document.getElementById("id_key").style.visibility="hidden";
+                document.getElementById("star_3").style.visibility="hidden";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- nav-top -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">YUNBO</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <div class="center-block">
+                    <ul class="nav navbar-nav" >
+                        <li><a href="MyConcern.html">我的关注</a></li>
+                        <li><a href="MyArt.html">我的艺术品</a></li>
+                        <li><a href="#">我的帖子</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+ 	  <div class="reg">
+         <form action="/reg_check" class="templatemo-login-form" method="post">
+ 	 	          <ul>
+                  <label class="reg_label" style="margin-right:80px;">名称：</label>
+                  <input type="text" id="user" name="user" value="请输入用户名" required>
+                  <label>*</label>
+              </ul>
+ 	 	          <ul >
+                  <label class="reg_label" style="margin-right:80px;">邮箱：</label>
+                  <input type="text" value="请输入您的邮箱" id="email" name="email" required>
+                  <label>*</label>
+              </ul>
+              <ul>
+                  <label class="reg_label" style="margin-right:80px;">生日：</label>
+                  <input type="text" value="请输入您的生日" id="birth" name="birth" required>
+                  <label>*</label>
+              </ul>
+ 	 	          <ul>
+                  <label class="reg_label" style="margin-right:80px;">密码：</label>
+                  <input type="text" value="请输入您的密码" type="password" id="password" name="password" required>
+                  <label>*</label>
+              </ul>
+ 	 	          <ul>
+                  <label class="reg_label" style="margin-right:24px;">再次输入密码：</label>
+                  <input type="text" value="请再次输入您的密码" type="password" id="password_1">
+                  <label>*</label>
+              </ul>
+ 	 	          <ul>
+                  <input type="checkbox" id="agreement" class="user_checbox" style="margin-left: 200px;"><a>阅读用户协议*</a>
+              </ul>
+ 	 	          <ul>
+                  <input type="checkbox" id="check_smrz" class="user_checbox" style="margin-left: 220px;" style="margin-right: 20px;" onclick="display_differ()"><a>实名认证 *</a>
+              </ul>
+              <ul>
+                  <label class="reg_label" id="name_label" style="margin-right:80px;visibility:hidden;">姓名</label>
+                  <input type="text" value="请输入您的真实姓名" type="text" id="true_name"  name="true_name" style="visibility:hidden;" required></input>
+                  <label id="star_1" style="visibility:hidden;">*</label>
+              </ul>
+              <ul>
+                  <label class="reg_label" id="type_label" style="margin-right: 160px;visibility:hidden;">证件类型</label>
+                  <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)" style="visibility:hidden;" required>
+                      <option value="身份证">身份证</option>
+                      <option value="护照">护照</option>
+                      <option value="军人证">军人证</option>
+                  </select>
+                  <label id="star_3" style="visibility:hidden;">*</label>
+              </ul>
+		          <ul>
+                  <label class="reg_label" id="id_num" style="margin-right:57px;visibility: hidden;" name="id_num" required>证件号码</label>
+                  <input type="text" value="请输入您的证件号码" type="text" id="id_key" style="visibility: hidden;" name="id_key" required>
+                  <label id="star_2" style="visibility: hidden;">*</label>
+              </ul>
+              <button type="submit" class="templatemo-blue-button width-100" style="margin-left: 250px;">注册</button>
+         </form>
+ 	 </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src=""></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../docs/assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
+

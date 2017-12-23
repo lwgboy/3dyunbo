@@ -1,0 +1,162 @@
+<!-- home-cc -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>个人信息</title>
+    <link href="../dist/css/PersonInfo.css" rel="stylesheet">
+    <!-- sidebar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+    <!-- style for this -->
+    <link href="../docs/examples/dashboard/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/Style.css">
+    <script src="../dist/js/modernizr.custom.js"></script>
+    <script src="../docs/assets/js/ie-emulation-modes-warning.js"></script>
+    <link rel="stylesheet" href="../docs/assets/css/ie10-viewport-bug-workaround.css">
+    <script src="../dist/js/docs.min.js"></script>
+    <script src="../dist/js/jquery-2.2%20stable.js"></script>
+    <script src="../dist/js/index.js"></script>
+    <script src="../dist/js/classie.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- nav-top -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <button id="showLeft" type="button" class="btn btn-default topleft">
+                    <span class="glyphicon glyphicon-menu-hamburger " aria-hidden="true"></span>
+                </button> -->
+                <button id="showLeft"  type="button" class="navbar-toggle2">
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                </button>
+                <a class="navbar-brand" href="#">YUNBO</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <div class="center-block">
+                    <ul class="nav navbar-nav" >
+                        <li><a href="MyConcern.html">我的关注</a></li>
+                        <li><a href="MyArt.html">我的艺术品</a></li>
+                        <li><a href="#">我的帖子</a></li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right">
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!--<div class="col-sm-3 col-md-2 col-xs-3">-->
+    <div class="   sidebar nav-sidebar-left" id="cbp-spmenu-s1">
+        <ul class="nav nav-sidebar ">
+            <div style="text-align:center; clear:both">
+                <ul id="accord" class="accord">
+                    <div class="link"><li><a href="personal_info.html">账户信息</a></li></div>
+                    <div class="link"><li><a href="">实名验证</a></li></div>
+                    <div class="link"><li><a href="">安全</a></li></div>
+                    <div class="link"><li><a href="">模型管理</a></li></div>
+                    <div class="link"><li><a href="">消息</a></li></div>
+                </ul>
+            </div>
+        </ul>
+    </div>
+    <!--</div>-->
+	  <form>
+        <ul><label class="label_name">昵称</label><input class="name" type="text"></input></ul>
+        <ul><label class="label_intro">介绍</label><input class="self_intro" type="text"></input></ul>
+        <ul><label class="label_intro">性别</label><input type="checkbox" value="男">男</input><input type="checkbox">女</ul>
+        <ul><label class="label_intro">邮箱</label><input class="name" type="text"></input></ul>
+        <ul><label class="label_intro">城市</label><input class="name" type="text"></input></ul>
+        <ul><label class="label_intro">职业</label><input class="name" type="text"></input></ul>
+        <ul>
+            <label class="label_degree" id="type_label">学历</label>
+            <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)" required>
+                <option value="学士">学士</option>
+                <option value="研究生">研究生</option>
+                <option value="博士生">博士生</option>
+            </select>
+        </ul>
+        <ul><input class="btn_change" type="button" value="修改" style="margin-left: 350px;width: 50px"></ul>
+		</form>
+</body>
+<script>
+    var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+    showLeft = document.getElementById( 'showLeft' ),
+    body = document.body;
+    showLeft.onclick = function()
+    {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuLeft, 'nav-sidebar-open' );
+        disableOther( 'showLeft' );
+    };
+    function disableOther( button )
+    {
+        if( button !== 'showLeft' )
+        {
+            classie.toggle( showLeft, 'disabled' );
+        }
+    }
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

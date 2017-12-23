@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../docs/favicon.ico">
+    <title>我的关注</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../docs/examples/dashboard/dashboard.css" rel="stylesheet">
+    	<link href="../docs/examples/dashboard/home.css" rel="stylesheet">
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../docs/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../docs/assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        *
+        {
+            margin:0px;
+            padding:0px;
+        }
+        li
+        {
+            list-style:none
+        }
+        li img
+        {
+            width: 280px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+  	<!-- nav-top -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">YUNBO</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                       <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <div class="center-block">
+                    <ul class="nav navbar-nav" >
+                        <li><a href="MyConcern.html">我的关注</a></li>
+                        <li><a href="MyArt.html">我的艺术品</a></li>
+                        <li><a href="#">我的帖子</a></li>
+                    </ul>
+                </div>
+                <form class="navbar-form navbar-right">
+                    <form class="navbar-form navbar-right">
+                        <button type="submit" class="btn btn-default" onclick="window.location.href='Setup.html'"><a data-toggle="modal">个人设置</a></button>
+                        <button type="submit" class="btn btn-default"><a data-toggle="modal" data-target="#register" href="">模型上传</a></button>
+                        <button class="btn btn-default" data-toggle="dropdown">
+                            上传<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">模型上传</a></li>
+                            <li><a href="#">图文上传</a></li>
+                        </ul>
+                    </form>
+                </form>
+		        </div>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    <div class="container">
+   		  <div class="row">
+            <div class="col-xs-6 col-sm-4" style="margin-left: -45px;">
+                <ul>
+                    <div class="img">
+                        <a target="_blank" href="">
+                            <img src="../images/home/p10.jpg" style="width: 300px;height: 260px" alt="Work">
+                        </a>
+                        <table>
+                            <tr>
+                                <td>
+                                    <button style="border: 0; outline: none" type="button" class="btn btn-default">
+                                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    </button>
+                                </td>
+                                <td>&emsp;</td>
+                                <td>&emsp;</td>
+                                <td>十八罗汉</td>
+                                <td>&emsp;</td>
+                                <td>2017-3-20</td>
+                                <td>&emsp;</td>
+                                <td>品种</td>
+                            </tr>
+                        </table>
+                        <p class="desc">在此处添加对图像的描述</p>
+                    </div>
+								    <div class="img">
+                        <a target="_blank" href="">
+                            <img src="../images/artwork/p31.jpg" style="width: 300px;height: 260px" alt="Work">
+                        </a>
+                        <table>
+                            <tr>
+                                <td>
+                                    <button style="border: 0; outline: none" type="button" class="btn btn-default">
+                                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    </button>
+                                </td>
+                                <td>&emsp;</td>
+                                <td>&emsp;</td>
+                                <td>青花瓷</td>
+                                <td>&emsp;</td>
+                                <td>2017-3-1</td>
+                                <td>&emsp;</td>
+                                <td>品种</td>
+                            </tr>
+                        </table>
+                        <p class="desc">文本文本文本</p>
+                    </div>
+									  <div class="img">
+                        <a target="_blank" href="">
+                            <img src="../images/home/p11.jpg" style="width: 300px;height: 260px" alt="Work">
+                        </a>
+                        <table>
+                            <tr>
+                                <td>
+                                    <button style="border: 0; outline: none" type="button" class="btn btn-default">
+                                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    </button>
+                                </td>
+                                <td>&emsp;</td>
+                                <td>&emsp;</td>
+                                <td>彩绘</td>
+                                <td>&emsp;</td>
+                                <td>2017-3-21</td>
+                                <td>&emsp;</td>
+                                <td>品种</td>
+                            </tr>
+                        </table>
+                        <p class="desc">在此处添加对图像的描述</p>
+                    </div>
+						    </ul>
+			      </div>
+			      <div class="col-xs-6 col-sm-4" style="margin-left: 62px;">
+                <ul>
+                    <div class="img">
+                        <a target="_blank" href="">
+                            <img src="../images/home/p13.JPG" style="width: 300px;height: 260px" alt="Work">
+                        </a>
+                        <table>
+                            <tr>
+                                <td>
+                                    <button style="border: 0; outline: none" type="button" class="btn btn-default">
+                                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    </button>
+                                </td>
+                                <td>&emsp;</td>
+                                <td>&emsp;</td>
+                                <td>喷漆</td>
+                                <td>&emsp;</td>
+                                <td>2017-3-12</td>
+                                <td>&emsp;</td>
+                                <td>品种</td>
+                            </tr>
+                        </table>
+                        <p class="desc">在此处添加对图像的描述</p>
+                    </div>
+									  <div class="img">
+                        <a target="_blank" href="">
+                            <img src="../images/home/p9.JPG" style="width: 300px;height: 260px" alt="Work">
+                        </a>
+                        <table>
+                            <tr>
+                                <td>
+                                    <button style="border: 0; outline: none" type="button" class="btn btn-default">
+                                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    </button>
+                                </td>
+                                <td>&emsp;</td>
+                                <td>&emsp;</td>
+                                <td>油画</td>
+                                <td>&emsp;</td>
+                                <td>2017-4-12</td>
+                                <td>&emsp;</td>
+                                <td>品种</td>
+                            </tr>
+                        </table>
+                        <p class="desc">在此处添加对图像的描述</p>
+                    </div>
+								    <div class="img">
+                        <a target="_blank" href="">
+                            <img src="../images/artwork/p33.jpg" style="width: 300px;height: 260px" alt="Work">
+                        </a>
+                        <table>
+                            <tr>
+                                <td>
+                                    <button style="border: 0; outline: none" type="button" class="btn btn-default">
+                                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    </button>
+                                </td>
+                                <td>&emsp;</td>
+                                <td>&emsp;</td>
+                                <td>name</td>
+                                <td>&emsp;</td>
+                                <td>time</td>
+                                <td>&emsp;</td>
+                                <td>品种</td>
+                            </tr>
+                        </table>
+                        <p class="desc">在此处添加对图像的描述</p>
+                    </div>
+                </ul>
+            </div>
+			      <div class="col-xs-6 col-sm-3" style="margin-left: 66px;">
+				         <ul class="nav nav-sidebar" text-margin="right">
+                      <li class="active"><a href="#" align="center">艺术品推荐<span class="sr-only">关注的艺术品</span></a></li>
+                      <li><a href="#"><img src="../images/mysite/u1750.jpg" class="img-responsive" alt="图片未能正确加载"></a></li>
+                      <li><a href="#"><img src="../images/artwork/p31.jpg" class="img-responsive" alt="图片未能正确加载"></a></li>
+                      <li><a href="#"><img src="../images/artwork/p32.jpg" class="img-responsive" alt="图片未能正确加载"></a></li>
+                      <li><a href=""><img src="../images/artwork/p33.jpg" class="img-responsive" alt="图片未能正确加载"></a></li>
+                      <li><a href=""></a></li>
+                      <li class="active"><a href="#" align="center">故事推荐<span class="sr-only">(current)</span></a></li>
+                      <li><a href="#"><img src="../images/mysite/u1750.jpg" class="img-responsive" alt="图片未能正确加载"></a></li>
+                      <li>
+                          <h4 align="center">十八罗汉</h4>
+                      </li>
+                      <li><a href="#"><img src="../images/artwork/p31.jpg" class="img-responsive" alt="图片未能正确加载"></a></li>
+                      <li>
+                          <h4 align="center">十八罗汉</h4>
+                      </li>
+                      <li><a href=""><img src="../images/artwork/p33.jpg" class="img-responsive" alt="图片未能正确加载"></a></li>
+                      <li>
+                          <h4 align="center">十八罗汉</h4>
+                      </li>
+                      <li><a href=""></a></li>
+                      <li class="active"><a href="#" align="center">关注的用户<span class="sr-only">(current)</span></a></li>
+                      <li><a class="user1" href="">用户1</a></li>
+                      <li><a class="user1" href="">用户2</a></li>
+                      <li><a class="user1" href="">用户3</a></li>
+                      <li><a class="user1" href=""></a></li>
+                 </ul>
+                 <ul class="nav nav-sidebar">
+                      <li class="active"><a href="#" align="center">关注的专栏<span class="sr-only">(current)</span></a></li>
+                      <li><a class="column" href="">专栏1</a></li>
+                      <li><a class="column" href="">专栏2</a></li>
+                      <li><a class="column" href="">专栏3</a></li>
+                 </ul>
+                 <ul class="nav nav-sidebar">
+                 </ul>
+			      </div>
+	      </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src=""></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../docs/assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
